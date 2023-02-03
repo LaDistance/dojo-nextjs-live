@@ -1,0 +1,29 @@
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 1.5rem;
+  gap: 0.5rem;
+  justify-content: space-between;
+  background-color: #cfcbca;
+  color: #000;
+}
+
+.showcaseText {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.alignedIconHelper {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Sorry it's ugly */
+.textWithIconRight {
+  margin-right: 5px;
+}
+
+.logo {
+  font-weight: 500;
+}
