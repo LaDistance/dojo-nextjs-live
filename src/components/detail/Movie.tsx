@@ -1,9 +1,9 @@
-import type { movieData } from "../../../data";
 import Image from "next/image";
 import styles from "./Movie.module.css";
 import { imageUrl } from "../../../constants";
+import { Movie } from "../../server/api/routers/movies";
 
-const Movie = ({ movie }: { movie: typeof movieData[number] }) => {
+const Movie = ({ movie }: { movie: Movie }) => {
   return (
     <div key={movie.id}>
       <div className={styles.card}>
@@ -17,7 +17,7 @@ const Movie = ({ movie }: { movie: typeof movieData[number] }) => {
           ></Image>
         </div>
         <h2>{movie.title}</h2>
-        <p>{movie.release_date}</p>
+        <p>{movie.release_date.toLocaleString()}</p>
       </div>
     </div>
   );
